@@ -1,0 +1,18 @@
+[submodule "Telecyclette-Camera"]
+	path = Telecyclette-Camera
+	url = https://github.com/telecyclette/Telecyclette-Camera
+[submodule "matlab_redcap_api"]
+	path = matlab_redcap_api
+	url = https://github.com/gavril0/matlab_redcap_api
+[submodule "matlab_anyconnect_vpn"]
+	path = matlab_anyconnect_vpn
+	url = https://github.com/gavril0/matlab_anyconnect_vpn
+[submodule "Telecyclette-Server"]
+	path = Telecyclette-Server
+	url = https://github.com/telecyclette/Telecyclette-Server
+[submodule "Telecyclette-Smartphone"]
+	path = Telecyclette-Smartphone
+	url = https://github.com/telecyclette/Telecyclette-Smartphone
+[submodule "Telecyclette-VR"]
+	path = Telecyclette-VR
+	url = https://github.com/telecyclette/Telecyclette-VR
