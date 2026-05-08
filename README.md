@@ -5,7 +5,7 @@ Telecyclette is a real-time biking experience that lets older adults venture int
 This repository is the umbrella workspace for the project. The actual software lives in the submodules and companion folders, each of which implements one part of the system. The root repository exists to keep the project organized and to provide a single entry point for the overall architecture.
 
 
-![Telecyclette logo](assets/telecyclette-logo.png)
+![Telecyclette logo](assets/telecyclette-logo.jpg)
 
 
 ## Project Overview
@@ -20,7 +20,7 @@ The system is built around a live, bidirectional setup:
 - the VR client renders the ride and preserves the feeling of telepresence
 - a signaling backend coordinates sessions, device connectivity, and call state
 
-![Telecyclette roadmap](assets/telecyclette-roadmap.png)
+![Telecyclette roadmap](assets/telecyclette-roadmap.jpg)
 
 The project also includes research and study components. It was designed as part of a randomized controlled trial that evaluates the effects of the Telecyclette experience on health, motivation, and well-being over time.
 
