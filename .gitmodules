@@ -16,4 +16,3 @@
 [submodule "Telecyclette-VR"]
 	path = Telecyclette-VR
 	url = https://github.com/telecyclette/Telecyclette-VR
-	branch = main
