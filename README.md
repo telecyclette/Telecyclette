@@ -4,10 +4,6 @@ Telecyclette is a real-time biking experience that lets older adults venture int
 
 This repository is the umbrella workspace for the project. The actual software lives in the submodules and companion folders, each of which implements one part of the system. The root repository exists to keep the project organized and to provide a single entry point for the overall architecture.
 
-
-![Telecyclette logo](assets/telecyclette-logo.jpg)
-
-
 ## Project Overview
 
 The Telecyclette project was developed to address isolation and affective impoverishment among older adults living in assisted facilities. Moving from the tenets of Self-Determination Theory, it aims to stimulate motivation to well-being by leveraging outdoor motor activity together with social and affective relationships.
