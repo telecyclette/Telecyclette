@@ -13,7 +13,7 @@ The system is built around a live, bidirectional setup:
 - the indoor rider pedals on a stationary bike while wearing a virtual reality headset
 - the outdoor cyclist rides a real bike equipped with a 360-degree action camera, microphones, and a loudspeaker
 - a high-speed live streaming layer transmits audio and video in real time
-- the VR client renders the ride and preserves the feeling of telepresence
+- the VR client renders the ride and preserves the feeling of telepresence, while sending audio from the cyclist through 
 - a signaling backend coordinates sessions, device connectivity, and call state
 
 ![Telecyclette roadmap](assets/telecyclette-roadmap.jpg)
@@ -33,6 +33,17 @@ The root folder contains the following project areas:
 
 The submodules are the real repositories. This main repository is meant to collect them in one place and provide shared project-level documentation.
 
+## Research Context
+
+The project was conceived for assisted living environments, where social isolation and reduced activity are common challenges. The research goal is to understand whether a shared outdoor biking experience can support motivation, motor activity, and broader bio-psycho-social well-being over time.
+
+In addition to the immediate user experience, the project explores the role of:
+
+- increased motivation to exercise
+- social and affective connection with family or friends
+- augmented visual exploration in VR
+- real-world longitudinal health outcomes
+
 ## Components
 
 ### Telecyclette Server
@@ -49,36 +60,15 @@ Typical responsibilities include:
 
 ### Telecyclette Smartphone App
 
-The Android smartphone app coordinates a Telecyclette session from the mobile side. It connects to the signaling backend, exchanges WebRTC messages, handles reconnection and call state, and collects session telemetry such as GPS and connection statistics.
+The Android smartphone app coordinates a Telecyclette session from the mobile side. It connects to the signaling backend, exchanges WebRTC messages (including live audio) handles reconnection and call state, and collects session telemetry such as GPS and connection statistics.
 
 ### Telecyclette Camera Application
 
-The camera application runs on the outdoor camera device and streams live audio and video from the buddy's bike. It connects to the signaling backend, establishes the WebRTC session, and reports call status and telemetry during the ride.
+The camera application runs on the outdoor camera device and streams live audio and video from the buddy's bike. It connects to the signaling backend and reports call status and telemetry during the ride.
 
 ### Telecyclette VR Client
 
-The VR component provides the immersive experience for the indoor rider. It receives the live stream from the outdoor bike and renders the remote ride inside a headset so that the user experiences the buddy's route in real time.
-
-## System Concept
-
-At a technical level, Telecyclette combines three main layers:
-
-1. A real-world sensing and streaming layer on the outdoor bike.
-2. A coordination and signaling layer in the server.
-3. A viewing and interaction layer in the indoor VR setup.
-
-This separation keeps the device-specific code isolated while allowing the system to operate as one connected session. It also makes the architecture easier to extend, for example by introducing new device types or future versions such as more interactive remote control.
-
-## Research Context
-
-The project was conceived for assisted living environments, where social isolation and reduced activity are common challenges. The research goal is to understand whether a shared outdoor biking experience can support motivation, motor activity, and broader bio-psycho-social well-being over time.
-
-In addition to the immediate user experience, the project explores the role of:
-
-- increased motivation to exercise
-- social and affective connection with family or friends
-- augmented visual exploration in VR
-- real-world longitudinal health outcomes
+The VR component provides the immersive experience for the indoor rider. It receives the live stream and audio from the outdoor bike and renders the remote ride inside a headset so that the user experiences the buddy's route in real time.
 
 ## Learn More
 
